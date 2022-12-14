@@ -130,6 +130,7 @@ debug.sf.enable_egl_image_tracker=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
 debug.sf.latch_unsignaled=1
+debug.sf.frame_rate_multiple_threshold=120
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -155,6 +156,9 @@ vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
+vendor.display.idle_time=0
+vendor.display.idle_time_inactive=0
+vendor.display.enable_force_split=1
 
 # Display - Set color mode to Adaptive by default
 persist.sys.sf.color_saturation=1.0
