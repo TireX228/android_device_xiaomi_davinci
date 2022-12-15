@@ -15,7 +15,6 @@
 #
 
 # Broken rules
-SELINUX_IGNORE_NEVERALLOWS := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_VENDOR := xiaomi
@@ -187,6 +186,8 @@ include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Screen density
 TARGET_SCREEN_DENSITY := 440
